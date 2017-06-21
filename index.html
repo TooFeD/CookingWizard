@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cooking Wizard</title>
+
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+	<select id="menu-list">
+		<option></option>
+	</select>
+	<span id="dish-item">Choose the dish and you will see the first step for cooking and needed ingredients</span><br>
+	<button id="back-step">Previous step</button>
+	<button id="next-step">Next step</button><br>
+
+	<select multiple hidden="true" id="ing-main-list">
+		<optgroup label="Ingredients:" id="ing-list"></optgroup>
+	</select>
+    <script defer type="text/javascript" src="menu.js"></script>
+    <script defer type="text/javascript" src="cookingWizard.js"></script>
+</body>
+
+</html>
